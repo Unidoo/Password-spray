@@ -14,7 +14,7 @@ Handle output securely, especially if it contains sensitive information, to prev
 
 Review and adhere to your organization's security guidelines and best practices for password testing and security assessments.
 
-Important: Ensure your valid users file and password file are in the same directory :)
+Important: Ensure your kerbrute_linux_amd64, valid users file and password file are in the same directory :)
 
 ![image](https://github.com/Unidoo/Password-spray/assets/81655620/3643d5fb-b50f-4d73-b406-e5814d76dc20)
 
