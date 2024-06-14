@@ -1,5 +1,24 @@
 #!/bin/bash
 
+echo "####################################################################################################"
+echo "#                                                                                                  #"
+echo "#                                            /\\     /\\                                             #"
+echo "#                                           /  \\___/  \\                                           #"
+echo "#                                          /            \\                                         #"
+echo "#                                          |  0      0  |                                         #"
+echo "#                                          |    (())    |                                         #"
+echo "#                                           \\  /''''\\  /                                          #"
+echo "#                                          /^\\/ ^ ^ \\/^\\                                         #"
+echo "#                                          \\  / ~~~ \\  /                                          #"
+echo "#                                            /\\  -  /\\                                            #"
+echo "#                                           / /-----\\ \\                                           #"
+echo "#                                          /_/       \\_\\                                          #"
+echo "#                                                                                                  #"
+echo "#                             PASSWORD SPRAY SCRIPT - USE RESPONSIBLY                             #"
+echo "#                                                                                                  #"
+echo "####################################################################################################"
+echo
+
 # Prompt for domain controller IP, domain name, password list filename, and valid users file
 read -ep "Enter the Domain Controller IP: " DC_IP
 read -ep "Enter the Domain: " DOMAIN
