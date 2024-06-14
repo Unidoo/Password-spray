@@ -14,8 +14,8 @@ echo "#                                            /\\  -  /\\                  
 echo "#                                           / /-----\\ \\                                           #"
 echo "#                                          /_/       \\_\\                                          #"
 echo "#                                                                                                  #"
-echo "#                             PASSWORD SPRAY SCRIPT - USE RESPONSIBLY                             #"
-echo "#                                                                                                  #"
+echo "#                             PASSWORD SPRAY SCRIPT - USE RESPONSIBLY                            #"
+echo "#                             Version: v1.0 - 06/14/2024 - Sebastian Pina                          #"
 echo "####################################################################################################"
 echo
 
