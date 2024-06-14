@@ -16,6 +16,9 @@ Review and adhere to your organization's security guidelines and best practices 
 
 Important: Ensure your kerbrute_linux_amd64, valid users file and password file are in the same directory :)
 
+![image](https://github.com/Unidoo/Password-spray/assets/81655620/4c1395da-7d8c-45aa-81a3-fb2d7d8386b4)
+
+
 ![image](https://github.com/Unidoo/Password-spray/assets/81655620/3643d5fb-b50f-4d73-b406-e5814d76dc20)
 
 
